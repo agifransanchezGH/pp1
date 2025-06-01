@@ -1,0 +1,16 @@
+.bloque{
+ border: 2px solid black;
+ margin:20px;
+ width: 300px;
+ display: block;
+ border-radius: 10px;
+ padding: 10px;
+}
+
+.linea{
+  border: 2px dotted black;
+  margin: 20px;
+  width: 300px;
+  display: inline-block;
+  padding: 10px;
+}

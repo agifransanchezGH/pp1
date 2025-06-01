@@ -1,0 +1,29 @@
+
+ul.horizontal-list {
+            list-style-type: none;
+            padding: 10;
+            margin: 10;
+            display: flex;
+            background: grey;
+            padding: 1px 2px;
+            border: 2px solid black;
+        }
+ul.horizontal-list li {
+            padding: 8px 10px;
+            color: blue;
+            font-weight: 600;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+ul.horizontal-list li:hover {
+            background-color: #39597a;
+        }
+ @media(max-width: 600px) {
+            ul.horizontal-list {
+                gap: 12px;
+                padding: 8px 12px;
+            }
+            ul.horizontal-list li {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+        }
