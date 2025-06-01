@@ -11,7 +11,7 @@
         private $nombre;
         private $sueldo;
 
-        function _construct($nombre , $sueldo){
+        function __construct($nombre , $sueldo){
             
             $this->nombre = $nombre;
             
