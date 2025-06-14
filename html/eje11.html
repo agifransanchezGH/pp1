@@ -3,38 +3,39 @@
     <h4>Ejercicio 11</h4>
 
     <body>
-        <form>
-            Nombre:
+        <form method = "post" action ="../php/ejercicio9.php" >
+            <label for= "nombre">Nombre:</label>
             <input name = "Nombre" size = 20 maxlength= 50>
-            <br>
-            <br>
-            Apellido:
+        <br>
+        <br>
+        <br>
+            <label for="apellido">Apellido:</label>
             <input name = "Apellido" size = 20 maxlength=50>
-            <br>
-            <br>
-            Sexo:
-            <input name="sexo" type="radio" value="M" checked>Masculino
-            <input name="sexo" type="radio" value="F" >Femenino
-            <input name="sexo" type="radio" value="NB" >No binario
-            <br>
-            <br>
-            Estado Civil:
+        <br>
+        <br>
+            <label for="sexo">Sexo:</label>
+            <input name="sexo" type="radio" value="Masculino" checked>Masculino
+            <input name="sexo" type="radio" value="Femenino" >Femenino
+            <input name="sexo" type="radio" value="No binario" >No binario
+        <br>
+        <br>
+            <label for ="estado civil">Estado Civil:</label>
             <select name="ecivil" id="ecivil">
                 <option value="S">Soltero</option>
                 <option value="C">Casado</option>
                 <option value="D">Divorciado</option>
                 <option value="V">Viudo</option>
             </select>
-            <br>
-            <br>
+        <br>
+        <br>
             <input name="acepto" type="checkbox" checked>
             Deseo recibir inforamcion sobre novedaes y ofertas
-            <br>
-            <br>
-            <input name="acepto" type="checkbox">
+        <br>
+        <br>
+            <input name="acepto1" type="checkbox">
             Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos
-            <br>
-            <br>
+        <br>
+        <br>
             <input type="submit">
         </form>
     </body>

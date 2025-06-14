@@ -17,7 +17,14 @@
         public function agregarCelda(Celda $c){$this->celdas[] = $c;}
 
         public function mostrarTabla(){
-            for ($i = 0; $i < 10; $i++){ echo $this->celdas[$i]-> getTexto().$i."|"."El número de celda es: ".$this->celdas[$i]->getNroCelda()."<br>";}
+            echo "<table border='1'>";
+            for ($i = 0; $i < 10; $i++){
+                echo "<tr>";
+                echo "<td>".$this->celdas[$i]->getTexto()." ".$i."</td>";
+                echo "<td>"."Número de celda ".$this->celdas[$i]->getNroCelda()."</td>";
+                echo "</tr>";
+            }
+            echo "</table>";
             }
         }
 
@@ -33,9 +40,7 @@
         public function setNroCelda($numero){$this->nroCelda = $numero;}
         public function getNroCelda(){return $this->nroCelda;}
     }
-    ?>
-<table border = "1">
-<?php    
+    
     $tabla = new Tabla();
     for ($i = 0; $i < 10; $i++){
         $celda = New Celda("Texto de celda", $i);
@@ -43,6 +48,5 @@
     }
         $tabla->mostrarTabla();
     ?>
-    </table>
 </body>
 </html>

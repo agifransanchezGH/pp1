@@ -16,10 +16,10 @@
         echo "Estado civil: ".$_POST["ecivil"]."<br>";
 
         if(isset($_POST["acepto"])){
-        echo "Recibir información: SI"."<br>";}else{ echo " Revibir Información: NO "."<br>";};
+        echo "Recibir información: Si"."<br>";}else{ echo " Revibir Información: No "."<br>";};
 
         if(isset($_POST["acepto1"])){
-            echo " Termios y condiciones: SI "."<br>";}else{echo " Termios y condiciones: NO "."<br>";};
+            echo " Termios y condiciones: Si "."<br>";}else{echo " Termios y condiciones: No "."<br>";};
     ?>
 </body>
 </html>

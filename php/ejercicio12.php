@@ -23,9 +23,9 @@
             public function getEdad(){return $this->edad;}
 
             public function mostrar(){
-                echo $this ->nombre;
+                echo "El nombre de la persona es: ". $this ->nombre;
                 echo "<br>";
-                echo $this->edad;
+                echo "Edad de la persona:".$this->edad;
             }
         }
 
@@ -40,20 +40,16 @@
 
             public function mostrar(){
                 echo parent::mostrar()."<br>";
-                echo "$".$this->sueldo;
+                echo "El sueldo es: $".$this->sueldo;
                 
             }
         }
 
         $persona = new Persona("Juan", 20);
-        echo "El nombre de la persona es: ".$persona->getNombre()."<br>";
-        echo "La edad de la persona es: ".$persona->getEdad()."<br>";
         echo $persona->mostrar()."<br>";
 
+        echo "<br>";
         $empleado = new Empleado("Lucas", 25, 20000);
-        echo "El nombre del empleado es: ".$empleado->getNombre()."<br>";
-        echo "La edad del empleado es: ".$empleado->getEdad()."<br>";
-        echo "El sueldo del empleado es: $".$empleado->getSueldo()."<br>";
         echo $empleado->mostrar()."<br>";
     ?>
 </body>

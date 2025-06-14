@@ -7,14 +7,30 @@
 </head>
 <body>
 <?php
-    function validar($i){
-        if ($i){}else{throw new Exception ("El campo no debe estar vacio");}
-}   
-        try{validar($_POST["Nombre"]);
-        }catch (Exception $i){ echo $i->getMessage();
-        }try{validar($_POST["Apellido"]);
-        }catch (Exception $i) { $i->getMessage();}
+    function validar(String $i): bool{
+        if ($i){return true;}else{return false;}
+    }   
+        function validarNombre(String $nombre){
+            if(!validar($nombre)){
+                throw new Exception("El nombre no puede estar vacío");
+            }else {echo "Nombre validado correctamente: ". $nombre."<br>";}
+            }
         
+        try{validarNombre($_POST["Nombre"]);
+        }catch (Exception $e){echo "Error: ".$e->getMessage()."<br>"; echo "<a href='../html/eje11 copy.html'>Volver al formulario</a>"."<br>";
+        }finally{echo "Validación finalizada"."<br>";}
+
+        function validarApellido(String $apellido){
+            if(!validar($apellido)){
+                throw new Exception("El apellido no  puede estar vacío");
+            }else {echo "Apellido validado correctamente: ". $apellido."<br>";}
+            }
+        
+        try{validarApellido($_POST["Apellido"]);
+        }catch(Exception $ex){echo "Error: ".$ex->getMessage()."<br>"; echo "<a href='../html/eje11 copy.html'>Volver al formulaio</a>"."<br>";
+        }finally{echo "Validación finalizada"."<br>";}
+        
+
     ?>
 </body>
 </html>
