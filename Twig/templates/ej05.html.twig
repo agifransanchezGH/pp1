@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+    {% if num == 1 %}
+            <h1>Encabezado 1</h1>
+        {% elseif num == 0 %}
+            <h1>Encabezado 0</h1>
+        {% else %}
+            <h1>Encabezado por defecto</h1>
+        {% endif %}
+    </ul>
+</body>
+</html>
